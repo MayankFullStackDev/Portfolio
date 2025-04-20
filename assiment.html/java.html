@@ -44,7 +44,9 @@
         font-size: 45px;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
        }
-     
+       img{
+        margin-left: 60px;
+       }
         .box-one {
             height: 500px;
             width: 100%;
@@ -74,9 +76,6 @@
             font-size: 15px;
             font-family: 'Times New Roman', Times, serif;
          }
-         img{
-            margin-right: 100px;
-         }
     </style>
 </head>
 <body>
@@ -94,9 +93,22 @@
             <br/>
             <code>
                 <pre>
-                    let a = 2345.34567
-                    let x = 23/7
-                    alert(x)
+                    class Scratch {
+                        public static void main(String[] args) {
+                            int boxOne = 10;
+                            int boxTwo = 20;
+                            int boxThree = 50;
+                            int sum = boxOne + boxTwo;
+                            int deff = boxThree - boxOne;
+                            int multi = boxOne * boxTwo;
+                            System.out.println(boxOne);
+                            System.out.println(boxTwo);
+                            System.out.println(boxThree);
+                            System.out.println(boxOne * boxTwo);
+                            System.out.println(boxOne + boxTwo);
+                            System.out.println(boxThree - boxOne + boxTwo * boxOne);
+                            }
+                        }
                 </pre>
             </code>
            </p>
@@ -108,7 +120,12 @@
                 <br/>
                 <code>
                     <pre>
-                       <img src="./js-image.png" width="700px" height="150px"/>
+                        10
+                        20
+                        50
+                        200
+                        30
+                        240
                     </pre>
                 </code>
             </p>
