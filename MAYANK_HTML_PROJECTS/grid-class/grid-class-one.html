@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .body{ 
+            height: 100vh;
+            width: 100vw;
+        }
+        .container{
+            border-style: solid;
+            border-color: black;
+            border-width: 4px;
+            background-color: rgb(181, 209, 219);
+            width: 90%;
+            height: 90%;
+            margin-left: 10px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+        }
+        .box-one{
+            background-color: rgb(143, 220, 35);
+            width: 45%;
+            height:45% ;
+        }
+        .box-two{
+            background-color: rgb(233, 19, 19);
+            width: 45%;
+            height:45% ;
+        }
+       .box-three{
+        background-color: rgb(200, 49, 170);
+            width: 45%;
+            height:45% ;
+       }
+    </style>
+</head>
+<body class="body">
+    <div class="container">
+        <div class="box-one">BOX 1</div>
+        <div class="box-two">BOX 2</div>
+        <div class="box-three">BOX3</div>
+        <div class="box-one">BOX 1</div>
+        <div class="box-two">BOX 2</div>
+        <div class="box-three">BOX3</div>
+       <div class="box-one">BOX 1</div>
+        <div class="box-two">BOX 2</div>
+        <div class="box-three">BOX3</div>
+    </div>
+</body>
+</html>

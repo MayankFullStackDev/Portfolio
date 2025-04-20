@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid class four</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(167, 140, 193);
+        }
+        .header{
+            height: 70px;
+            width: 100%;
+            background-color: rgb(235, 235, 88);
+            text-align: center;
+            gap: 1;
+        }
+
+        .main-container {
+            height: auto;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            row-gap: 20px;
+            column-gap: 20px;
+        }
+
+        /** box one **/
+        .box-one {
+            width: 100%;
+            height: 450px;
+            background-color: rgb(242, 244, 241);
+            text-align: center;
+
+        }
+
+        /** box two **/
+        .box-two {
+            width: 100%;
+            height: 450px;
+            background-color: rgb(246, 246, 246);
+            text-align: center;
+        }
+
+        /** box three **/
+        .box-three {
+            width: 100%;
+            height: 450px;
+            background-color: rgb(248, 252, 245);
+            text-align: center;
+        }
+
+        /** box four **/
+        .box-four {
+            width: 100%;
+            height: 450px;
+            background-color: rgb(254, 254, 254);
+            text-align: center;
+        }
+
+        /** box five**/
+        .box-five {
+            width: 100%;
+            height: 450px;
+            background-color: rgb(253, 253, 253);
+            text-align: center;
+        }
+
+        /** box six **/
+        .box-six {
+            width: 100%;
+            height: 450px;
+            background-color: rgb(245, 248, 241);
+            text-align: center;
+        }
+
+        /** box seven**/
+        .box-seven {
+            width: 100%;
+            height: 450px;
+            background-color: rgb(250, 252, 248);
+            text-align: center;
+        }
+
+        /** box eight**/
+        .box-eight {
+            width: 100%;
+            height: 450px;
+            background-color: rgb(248, 248, 248);
+            text-align: center;
+        }
+
+        /** box nine **/
+        .box-nine {
+            width: 100%;
+            height: 450px;
+            background-color: rgb(241, 241, 241);
+            text-align: center;
+        }
+
+        /** box ten **/
+        .box-ten {
+            width: 100%;
+            height: 450px;
+            background-color: rgb(250, 250, 249);
+            text-align: center;
+        }
+
+        p {
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+   <h1>PRODUCTS</h1>
+   <br/>
+    </div>
+    <br>
+    <div class="main-container">
+        <div class="box-one">
+            <img src="../assetstwo/imagetwo/laptop.jpg" width="100%" height="200px" />
+            <p>
+            <h3> ₹88,990</h3>
+            <h2>Apple MacBook Air Laptop</h2>
+            2022 Apple MacBook Air Laptop with M2 chip: 13.6-inch Liquid Retina Display, 16GB RAM, 256GB SSD
+            Storage, Backlit Keyboard, 1080p FaceTime HD Camera. Works with iPhone and iPad; Midnight
+            </p>
+        </div>
+        <div class="box-two">
+            <img src="../assetstwo/imagetwo/iphone.jpg" width="100%" height="200px" />
+            <p>
+            <h3>₹73,400</h3>
+            <h2>iPhone 16 </h2>
+            iPhone 16 128 GB: 5G Mobile Phone with Camera Control, A18 Chip and a Big Boost in Battery Life. Works with
+            AirPods; White
+            </p>
+        </div>
+        <div class="box-three">
+            <img src="../assetstwo/imagetwo/mause.jpg" width="100%" height="200px" />
+            <p>
+            <h3>₹1,490</h3>
+            <h2>Offbeat - Atom Dual Bluetooth</h2>
+            Offbeat - Atom Dual Bluetooth 5.1+5.1 & 2.4Ghz Wireless, Type-C Rechargeable Silent Click Mouse, Triple
+            Device connectivity Windows, Mac, iOS, Android
+            </p>
+        </div>
+        <div class="box-four">
+            <img src="../assetstwo/imagetwo/buds.jpg" width="100%" height="200px" />
+            <p>
+            <h3>₹12,764</h3>
+            <h2>Apple AirPods 4</h2>
+            Apple AirPods 4 Wireless Earbuds, Bluetooth Headphones, Personalised Spatial Audio, Sweat and Water
+            Resistant, USB-C Charging Case, H2 Chip, Up to 30 Hours of Battery Life, Effortless Setup for iPhone
+            </p>
+        </div>
+        <div class="box-five">
+            <img src="../assetstwo/imagetwo/iphone.jpg" width="100%" height="200px" />
+            <p>
+            <h3>₹54,880</h3>
+            <h2>Meta Quest 3</h2>
+            Meta Quest 3 512GB - Breakthrough Mixed Reality - Powerful Performance — Asgard’s Wrath 2 and Meta Quest +
+            Bundle
+            </p>
+        </div>
+        <div class="box-six">
+            <img src="../assetstwo/imagetwo/watch.jpg" width="100%" height="200px" />
+            <p>
+            <h3>₹24,900</h3>
+            <h2>Apple Watch SE</h2>
+            Apple Watch SE (2nd Gen, 2023) [GPS 40mm] Smartwatch with Silver Aluminum Case with Blue Cloud Sport Loop.
+            Fitness & Sleep Tracker, Crash Detection, Heart Rate Monitor, Retina Display
+            </p>
+        </div>
+        <div class="box-seven">
+            <img src="../assetstwo/imagetwo/macmini.jpg" width="100%" height="200px"/>
+            <p>
+            <h3>₹1,49,900</h3>
+            <h2>Apple 2024 Mac Mini</h2>
+            Apple 2024 Mac Mini Desktop Computer with M4 Pro chip with 12‑core CPU and 16‑core GPU: Built for Apple
+            Intelligence, 24GB Unified Memory, 512GB SSD Storage, Gigabit Ethernet. Works with iPhone/iPad
+            </p>
+        </div>
+        <div class="box-eight">
+            <img src="../assetstwo/imagetwo/projector.jpg" width="100%" height="200px"/>
+            <p>
+            <h3>₹29,980</h3>
+            <h2>E Gate O9 Pro Gold</h2>E Gate O9 Pro Gold, Complete Home Cinema Combo | Dual OS 4K Projector
+            (Android+FTS) + 300W Dolby Soundbar with HDMI ARC | 100% Dust Proof, 2100 ANSI, Automatic, Native1080p, 2
+            HDMI with ARC, 2GB+32GB
+
+            </p>
+        </div>
+        
+    </div>
+</body>
+
+</html>
