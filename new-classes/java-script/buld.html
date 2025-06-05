@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BULB</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+        }
+        .con{
+            height: 50%;
+            width: 18%;
+            border-radius: 8px;
+            border-color: black;
+            border-style: solid;
+        }
+        button{
+            height: 40px;
+            width: 100px;
+            color: white;
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <img src="../ASSEETS/PHOTO/bulb-off.jpg" id="image" height="317 px" width="215px"/>
+    <button onclick="changeimage()">ON</button>
+    <button onclick="imagechange()">OFF</button>
+    </div>
+    <div>
+
+    </div>
+
+    <script>
+        function changeimage(){
+            document.getElementById('image').src='../ASSEETS/PHOTO/bulb-on.jpg';
+        }
+
+        function imagechange(){
+            document.getElementById('image').src='../ASSEETS/PHOTO/bulb-off.jpg';
+        }
+    </script>
+</body>
+</html>

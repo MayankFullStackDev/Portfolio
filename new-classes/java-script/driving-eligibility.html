@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparism Using Boolean Data Type</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            margin: 00;
+            padding: 00;
+             background-color: rgb(189, 251, 230);
+        }
+
+        .main-container {
+            height: 100%;
+            width: 100%;
+            margin-left: 300px;
+           
+        }
+
+        .display {
+            height: 55%;
+            width: 33%;
+            border-radius: 4px;
+            border-color: rgb(87, 85, 85);
+            border-style: solid;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            margin-left: 60px;
+            padding-top: 30px;
+            font-size: 20px;
+        }
+
+        .flabel{
+            margin-left: 10px;
+        }
+         .finput{
+            margin-left: 60px;
+            width: 370px;
+            height: 30px;
+         }
+         input{
+            margin-left: 70px;
+         }
+       
+        button {
+            margin-left: 50px;
+            height: 40px;
+            width: 400px;
+            background-color: rgb(226, 55, 55);
+            color: white;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+
+        .board {
+            height: 70px;
+            width: 400px;
+            background-color: rgb(180, 186, 186);
+            border-color: rgb(74, 71, 71);
+            border-style: solid;
+            margin-left: 40px;
+            font-size: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!--main container start-->
+    <div class="main-container">
+
+        <!--display start-->
+        <div class="display">
+            <p>
+            <h2>Drive Eligibility Checker </h2>
+            <br>
+           
+            <label>Your Age:</label><br />
+            <input class="finput" placeholder="Type Your Age" type="number" id="age">
+            <br><br>
+            <input  type="checkbox" id="hasLicense"><label class="flabel">I have a valid driver's license</label>
+            <br><br><br>
+            <button onclick="Age()">Check Eligibility</button>
+            </p>
+            <div class="board" id="result">
+
+            </div>
+        </div>
+    </div>
+    <script>
+        function Age(){
+            const age = (document.getElementById("age").value);
+            const hasLicense = document.getElementById("hasLicense").checked;
+             document.getElementById("result").innerHTML = password = age >=18 && hasLicense;
+        }
+    </script>
+</body>
+
+</html>

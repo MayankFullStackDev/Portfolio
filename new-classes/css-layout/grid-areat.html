@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid area</title>
+    <style>
+        body {
+            width: 100vw;
+            height: auto;
+            margin: 00;
+            padding: 00;
+            display: grid;
+            grid-template-areas: 
+            "header header header header"
+            "nav nav nav nav"
+            "aside main main main"
+            "aside section section section"
+            "div article article div-two"
+            "footer footer footer footer";
+            gap:4px;
+        }
+
+        header {
+            grid-area: header;
+            width: 100%;
+            height: 80px;
+            background-color: rgb(239, 71, 71);
+        }
+
+        nav {
+            grid-area: nav;
+            width: 100%;
+            height: 50px;
+            background-color: rgb(9, 20, 20);
+        }
+
+        aside {
+            grid-area: aside;
+            width: 100%;
+            height: 100%;
+            background-color: blueviolet;
+        }
+
+        main {
+            grid-area: main;
+            width: 100%;
+            height: 250px;
+            background-color: darkblue;
+        }
+        section{
+            grid-area: section;
+            width: 100%;
+            height: 250px;
+            background-color: lightgreen;
+        }
+        article{
+            grid-area: article;
+            width: 100%;
+            height: 100px;
+            background-color: darkgrey;
+        }
+        div{
+             grid-area: div;
+            width: 100%;
+            height: 100px;
+            background-color: rgb(70, 198, 15);
+        }
+        .div-two{
+             grid-area: div-two;
+            width: 100%;
+            height: 100px;
+            background-color: rgb(177, 80, 215);
+        }
+        footer{
+            grid-area: footer;
+            width: 100%;
+            height: 100px;
+            background-color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <nav></nav>
+    <aside></aside>
+    <main></main>
+    <section></section>
+    <article></article>
+    <div></div>
+    <div class="div-two"></div>
+    <footer></footer>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+        }
+        .main{
+            height: 70%;
+            width: 50%;
+            background-color: #9FB3DF;
+            border-color: black;
+            border-style: solid;
+            text-align: center;
+           border-radius: 15px;
+          
+        }
+        input{
+            height: 10%;
+            width: 80%;
+            font-size: 20px;
+            border-radius: 9px;
+         
+        }
+        button{
+            height: 100px;
+            width: 90px;
+            border-radius: 10%;
+            background-color: #8F87F1;
+            font-size: 60px;
+            margin-top: 20px;
+        }
+        .dis{
+            height: 30%;
+            width: 80%;
+            background-color: rgb(7, 7, 7);
+            margin-top: 20px;
+            margin-left: 60px;
+            border-radius: 9px;
+            color: white;
+            font-size: 40px;
+            text-align: center;
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+         <h1>Calculator</h1>
+        <input type="number" placeholder="Enter a number 1" id="input-one"><br><br><br>
+        <input type="number" placeholder="Enter a number 2" id="input-two"><br>
+        <button onclick="MyAddition()"><b>+</b></button>
+        <button onclick="MySubtraction()"><b>-</b></button>
+        <button onclick="MyMultiplication()"><b>*</b></button>
+        <button onclick="MyDivision()">/</button>
+        <button onclick="MyModulus()">%</button>
+        <div class="dis" id="result"></div>
+    </div>
+    <script>
+        // for addition
+        function MyAddition(){
+           let num1 = Number(document.getElementById('input-one').value)
+           let num2 = Number(document.getElementById('input-two').value)
+           let sum = num1 + num2;
+           alert(sum)
+           console.log(sum)
+           document.getElementById('result').innerHTML = sum;
+        }
+
+        // for subtraction
+        function MySubtraction(){
+            let num1 = Number(document.getElementById('input-one').value)
+            let num2 = Number(document.getElementById('input-two').value)
+            let diff = num1 - num2;
+            alert(diff);
+            console.log(diff);
+            document.getElementById('result').innerHTML = diff;
+        }
+
+        //for multiplication
+        function MyMultiplication(){
+            let num1 = Number(document.getElementById('input-one').value)
+            let num2 = Number(document.getElementById('input-two').value)
+            let multi = num1 * num2;
+            alert(multi);
+            console.log(multi);
+            document.getElementById('result').innerHTML = multi;
+        }
+
+        //for division
+        function MyDivision(){
+            let num1 = Number(document.getElementById('input-one').value)
+            let num2 = Number(document.getElementById('input-two').value)
+            let div = num1 / num2;
+            alert(div);
+            console.log(div);
+            document.getElementById('result').innerHTML = div;
+        }
+
+        //for modulus
+        function MyModulus(){
+            let num1 = Number(document.getElementById('input-one').value)
+            let num2 = Number(document.getElementById('input-two').value)
+            let modu = num1 % num2;
+            alert(modu);
+            console.log(modu);
+            document.getElementById('result').innerHTML = modu;
+        }
+    </script>
+</body>
+</html>

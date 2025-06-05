@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Seven Day Seven Button</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            margin: 00;
+            padding: 00;
+        }
+
+        .main-con {
+            width: 100%;
+            height: 100%;
+            background-color: #94B4C1;
+        }
+
+
+
+        .display {
+            height: 50%;
+            width: 100%;
+            display: grid;
+            background-color: #7C4585;
+            border-radius: 6px;
+            border-color: black;
+            border-style: solid;
+
+        }
+
+        .buttonc {
+            height: 50%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+
+        .btn {
+            font-size: 30px;
+            height: 100px;
+           
+        }
+
+        span {
+            text-align: center;
+            font-size: 70px;
+            
+        }
+
+        p {
+            font-size: 70px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <!--changin the color after clicking the buttton-->
+    <div class="main-con" id="main-con">
+
+        <div class="display" id="display">
+            <span>Welcom to CAlender</span>
+            <p id="displayl"></p>
+            <div class="buttonc">
+                <button class="btn" onclick="displaySunday()" id="sunday">Sunday</button>
+                <button class="btn">Monday</button>
+                <button class="btn">Tuesday</button>
+                <button class="btn">Wednsday</button>
+                <button class="btn">Thursday</button>
+                <button class="btn">Friday</button>
+                <button class="btn">Saturday</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        //function for sunday
+        function displaySunday(){
+            document.getElementById("display").innerHTML = " Today is Sunday !";
+            document.getElementById("main-con").style.backgroundColor = "#3D365C";
+            document.getElementById("displayl").style.backgroundColor = "#4F1C51";
+            document.getElementById("sunday").style.backgroundColor = "#C68EFD";
+            document.getElementById("display").style.color = "white"
+        }
+    </script>
+</body>
+
+</html>

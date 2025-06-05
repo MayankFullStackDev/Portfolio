@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LENTH AND UPPERCASE</title>
+</head>
+<body>
+    <label>Name</label><br/>
+     <input type="text" placeholder="Enter FirstName" id="name"><br/><br/>
+     <button onclick="StringLength()"> LENGTH</button>
+     <script>
+       function StringLength(){
+         let String1 = document.getElementById('name').value;
+
+        let stringlength = String1.length
+        alert(stringlength);    
+
+        let stringUpperCase = String1.toUpperCase();
+        alert(stringUpperCase)
+
+        let sliceString = String1.slice(20)
+        alert (sliceString);
+       }
+     </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input id="eligible">
+        <button onclick="Eligibility()"></button>
+        
+    </div>
+    <script>
+        function Eligibility(){
+            let voter = 18
+            document.getElementById("eligible").innerHTML = voter
+
+            if (voter ==18){
+                document.getElementById("display").innerHTML = voter
+                document.getElementById("display").innerHTML = "your eligibility"
+            }
+            else{
+                alert("not eligiblle")
+            }
+           
+        }
+    </script>
+</body>
+</html>

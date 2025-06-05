@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>INPUT OUTPUT CLASS</title>
+
+ <style>
+    .input-field{
+        width: 500px;
+        height: 200px;
+        background-color: #7F8CAA;
+        padding: 5px;
+    }
+    input{
+        width: 90%;
+        height: 30%;
+        font-size: 35px;
+    }
+    button{
+        border-radius: 4%;
+        margin-top: 20px;
+        font-size: 30px;
+        width: 50%;
+        height: 30%;
+        background-color: #4E6688;
+        color: #000000;
+    }
+ </style>
+</head>
+<body>
+    <p id="result">Output</p>
+
+    <div class="input-field">
+        Display
+        <p id="display"></p>
+        <input type="text" id="input" placeholder="Enter a value">
+        <button onclick="inputFunction()">Submit</button>
+    </div>
+    <script>
+        //asign
+       // var Number = 10;
+        //output
+       // console.log(Number);                                                     //output on colsole
+       // alert(Number);                                                          //output on alert
+        //document.getElementById('result').innerHTML=Number                     //output on HTML
+
+
+        //input using promt 
+         //var Number = prompt("Enter a Number:  ");                     
+         //console.log(Number);                                                 //output on colsole
+         //alert(Number);                                                      //output on alert
+        // document.getElementById('result').innerHTML=Number                 //output on HTML
+
+        //input using HTML
+         
+        function inputFunction(){
+           var Number = document.getElementById('input').value;
+          document.getElementById('display').innerHTML = Number;
+          alert(Number);
+          console.log(Number);
+        }
+        
+    </script>
+</body>
+</html>
