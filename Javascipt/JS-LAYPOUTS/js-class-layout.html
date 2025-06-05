@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<head>
+    <title>UI </title>
+  <style>
+    body{
+        height: 100vh;
+        width: 100vh;
+    }
+
+    .main-con{
+        height: 80%;
+        width: 70%;
+        border-color: black;
+        border-style: solid;
+        border-width: 3px;
+        margin-left: 50%;
+    }
+    .display{
+        height: 35%;
+        width: 70%;
+        border-color: black;
+        border-style: solid;
+        margin-left: 13%;
+        margin-top: 10%;
+        background-color: lightsalmon;
+        font-size: 30px;
+    }
+    .input-field{
+        height: 30%;
+        width: 70%;
+        border-color: black;
+        border-style: solid;
+        margin-left: 13%;
+        margin-top: 5%;
+    }
+    input{
+        height: 90%;
+        width: 80%;
+        margin-left: 5%;
+        margin-top: 1%;
+        font-size: 30px;
+    }
+    .btn{
+        height: 10%;
+        width: 70%;
+        border-color: black;
+        border-style: solid;
+        margin-left: 13%;
+        margin-top: 5%;
+        background-color: green;
+    }
+    .btn:hover{
+        background-color: yellow;
+    }
+    
+  </style>
+
+  <script>
+    function displayString(){
+        alert("Hello javascript");
+        let a = 20;
+        console.log(a)
+        return "hello";
+    }
+    
+
+    function displaySum(){
+        document.getElementById("display").innerHTML ="2 + 2 ="+(2+2);
+    }
+
+    function inputValue(){
+        let number = document.getElementById("input").value;
+        document.getElementById("display").innerHTML= number;  //UI
+        console.log(number);  //consol
+        alert(number);  //Alert
+    }
+  </script>
+</head>
+<body>
+    <div class="main-con">
+        <div class="display" id="display"></div>
+        <div class="input-field">
+            <input type="number" id="input" placeholder="Enter your text">
+        </div>
+        
+        <button class="btn" onclick="inputValue()">Submit</button>
+    </div>
+</body>
+</html>

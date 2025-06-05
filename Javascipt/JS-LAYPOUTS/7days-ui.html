@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Seven Days</title>
+    <link rel="stylesheet" href="js-class.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="display" id="screen">
+            <span id="display">Display</span>
+        </div>
+        <div class="week-container">
+            <!--<button onclick="showDays('SUNDAY')">Sunday
+               <p id="display"></p>
+            </button>
+            <button onclick="showDays('MONDAY')">Monday
+               <p id="display"></p>
+            </button>-->
+            <button onclick="showDays('SUNDAY','red')">Tuesday</button>
+            <button onclick="showDays('MONDAY','green')">Wensday</button>
+            <button onclick="showDays('TUESDAY','yellow')">Tuesday</button>
+            <button onclick="showDays('WENSDAY','blue')">Wensday</button>
+            <button onclick="showDays('THURSDAY')">Thursday</button>
+            <button onclick="showDays('FRIDAY')">Friday</button>
+            <button onclick="showDays('SATURDAY')">Saturday</button>
+           </div>
+    </div>
+    <script>
+        //let count = 7;
+        function showDays(day, color){
+            // count += 1;
+            //document.getElementById("display").innerHTML = count;
+            document.getElementById("display").innerHTML = day;
+            document.getElementById("screen").style.background = color;
+        }
+    </script>
+</body>
+</html>
