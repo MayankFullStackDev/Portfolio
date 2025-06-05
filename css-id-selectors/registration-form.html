@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        /*body styl*/
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(196, 212, 238);
+           margin-left: 60px;
+            border-radius: 10%;
+          margin-top: 40px;
+
+        }
+        .father{
+        padding-top: 20px;
+        padding-left: 29px;
+        height: 100%;
+        }
+        /* main container*/
+        .main-container {
+            height: 80%;
+            width: 85%;
+            background-color: rgb(255, 255, 255);
+            
+        }
+
+        /*heading*/
+        .heading {
+            height: 15%;
+            width: 80%;
+            background-color: rgb(255, 255, 255);
+            padding-top: 10px;
+            padding-left: 160px;
+        }
+       
+
+        /* parent left right*/
+        .parent {
+            grid-template-columns: repeat(2, 1fr);
+            display: grid;
+            height: 45%;
+            padding-left: 200px;
+        }
+         
+        /* LEFT SIDE */
+        .left-side {
+
+            background-color: rgb(255, 255, 255);
+        }
+
+        label{
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        input[type="text"]{
+             font-size: 20px;
+             border-radius: 3px;
+             border-style: solid;
+             border-color: black;
+        }
+        input[type="number"]{
+             font-size: 20px;
+             border-radius: 3px;
+             border-style: solid;
+             border-color: black;
+        }
+        input[type="submit"]{
+             font-size: 20px;
+             border-radius: 3px;
+             border-style: solid;
+             border-color: black;
+        }
+        input[type="email"]{
+             font-size: 20px;
+             border-radius: 3px;
+             border-style: solid;
+             border-color: black;
+        }
+        input[type="password"]{
+             font-size: 20px;
+             border-radius: 3px;
+             border-style: solid;
+             border-color: black;
+        }
+
+
+        /* RIGHT SIDE*/
+        .right-side {
+
+            background-color: rgb(255, 255, 255);
+        }
+
+        /*BUTTOM*/
+        .buttom {
+            height: 35%;
+            width: 100%;
+            padding-left: 200px;
+        }
+
+        /* gender*/
+        .gender {
+            height: 40%;
+            width: 80%;
+             background-color: white;
+            grid-template-columns: repeat(3, 1fr);
+            display: grid;
+           
+        }
+
+        /* male*/
+        .male {
+            height: 30%;
+        }
+
+        /* female*/
+        .female {
+            height: 30%;
+        }
+
+        /* prepare*/
+        .prepare {
+            height: 30%;
+        }
+       /* button registration*/
+       .button{
+        height: 50%;
+       }
+       /*etc*/
+       .etc{
+        height:50% ;
+       }
+       button{
+        width: 70%;
+        height: 50%;
+    background-color: rgb(70, 171, 204);
+    color: white;
+       }
+       button:hover{
+        color: red;
+        background-color: yellow;
+       }
+    </style>
+</head>
+
+<body>
+   <div class="father">
+     <!--heading-->
+     <div class="main-container">
+        <div class="heading"> <blockquote><h1>Registration</h1></blockquote> </div>
+      
+        <!--parent for left & right-->
+        <div class="parent">
+            <div class="left-side">
+                <label>Full Name</label><br/>
+                <input type="text" placeholder="Enter your name">
+                <br/> <br/>
+                <label>Email</label><br/>
+                <input type="email" placeholder="Enter your email">
+                <br/><br/>
+                <label>Password</label><br/>
+                <input type="password" placeholder="Enter your password">
+            </div>
+            <div class="right-side">
+                <label>Username</label><br/>
+                <input type="text" placeholder="Enter your username">
+                <br/> <br/>
+                <label>Phone Number </label><br/>
+                <input type="number" placeholder="Enter your number ">
+                <br/><br/>
+                <label>Confirm password</label><br/>
+                <input type="password" placeholder="Enter your password ">
+            </div>
+        </div>
+        <!--butoom-->
+        <div class="buttom">
+             <label>Gender</label><br/><br/>
+             <!--gender-->
+            <div class="gender">
+                <div class="male">
+                   
+                    <input type="radio" name="gender" value="Male">
+                    <label>Male</label>
+                </div>
+                <div class="Female">
+                    <input type="radio" name="gender" value="Female">
+                    <label>Female</label>
+                </div>
+                <div class="prepare">
+                    <input type="radio" name="gender" value="Prefer not to say">
+                    <label>Prefer not to say </label>
+                </div>
+            </div>
+
+            <!--buttom-->
+            <div class="button"> 
+                <button><h3>Register</h3></button>
+                 </div>
+            <div class="etc"></div>
+        </div>
+    </div>
+   </div>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            margin: 0px;
+        }
+
+        #main-container {
+            height: 100%;
+            width: 100%;
+        }
+
+        #header {
+            height: 10%;
+            width: 100%;
+            background-color: fuchsia;
+            text-align: center;
+        }
+
+        #home {
+            height: 80%;
+            width: 100%;
+            background-color: rgb(226, 229, 232);
+            display: grid;
+        }
+
+        .heading {
+            color: black;
+            font-size: 26px;
+            text-align: center;
+        }
+
+        .heading:hover {
+            color: yellow;
+            height: 100px;
+        }
+
+        .home-info {
+            width: 70%;
+            height: 70%;
+            border-style: solid;
+            border-width: 3px;
+            border-color: black;
+            text-align: justify;
+        }
+
+        p {
+            color: black;
+            font-size: 20px;
+        }
+
+        p:hover {
+            color: blueviolet;
+
+        }
+
+        .home-img {
+
+            width: 160px;
+            float: left;
+            padding: 1%;
+        }
+
+        #footer {
+            height: 10%;
+            width: 100%;
+            background-color: rgb(136, 176, 25);
+            display: grid;
+        }
+
+        /* grouping selector*/
+        h3,
+        a,
+        #header {
+            text-align: center;
+            font-size: 29px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main-container">
+        <div id="header">
+            <span><a href="#">Home</a></span>
+            <span><a href="#">Contact</a></span>
+        </div>
+        <div id="home">
+            <h1 class="heading">Welcome to my website</h1>
+            <div class="home-info">
+                <p>
+                    <img class="home-img" src="../assetstwo/imagetwo/ram.jpg" />
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio culpa quod facere. Est minus nisi
+                    nesciunt minima impedit ipsam maxime incidunt voluptatem repellendus, itaque deserunt placeat
+                    corporis commodi eum saepe sint quam soluta. Nemo consequuntur reiciendis non. Debitis dignissimos
+                    quod amet distinctio nesciunt illo alias, excepturi provident laudantium dolorem quas quos eaque
+                    minus pariatur?<br />
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora dolores perferendis ad, esse
+                    debitis excepturi quam ipsam sed assumenda delectus reprehenderit ab optio eos iste nemo velit quia
+                    voluptas. Eligendi quos quis quisquam reiciendis inventore fuga ut hic suscipit accusantium
+                    explicabo nobis voluptatem architecto expedita facere, adipisci modi cum praesentium itaque repellat
+                    excepturi alias. Atque nam quis quo voluptas tempora quae aperiam nesciunt adipisci commodi officia
+                    vitae, hic illum suscipit ad deleniti distinctio dolorem porro. Illum dignissimos nesciunt eos magni
+                    qui voluptatum architecto sint non deleniti, aspernatur enim at totam.
+                </p>
+            </div>
+        </div>
+        <div id="footer">
+            <h3>@copyright 2025,by Enjoy Programing</h3>
+        </div>
+    </div>
+</body>
+
+</html>

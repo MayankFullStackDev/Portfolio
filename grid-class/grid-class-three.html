@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid class three</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .main-container {
+            height: 100%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+            gap: 8px;
+        }
+
+        .box-one {
+            height: 100%;
+            width: 100%;
+            background-color: gray;
+            grid-column: 1/ span 5;
+        }
+
+        .box-two {
+            height: 100%;
+            width: 100%;
+            background-color: rgb(23, 3, 3);
+            grid-column: 1/ span 2;
+            grid-row: 2/ span 3;
+        }
+
+        .box-three {
+            height: 100%;
+            width: 100%;
+            background-color: rgb(14, 118, 155);
+            grid-column: 3/ span 3;
+
+        }
+
+        .box-four {
+            height: 100%;
+            width: 100%;
+            background-color: rgb(202, 12, 28);
+            grid-column: 3/ span 3;
+        }
+
+        .box-five {
+            height: 100%;
+            width: 100%;
+            background-color: rgb(59, 192, 29);
+            grid-column: 3/ span 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <!--box one-->
+        <div class="box-one"></div>
+        <!--box two-->
+        <div class="box-two"></div>
+        <!--box three-->
+        <div class="box-three"></div>
+        <!--box four-->
+        <div class="box-four"></div>
+        <!--box five-->
+        <div class="box-five"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS TABLE CLASS ONE</title>
+        <style>
+            .table{
+                width: 100%;
+                height: 790px;
+                border-style: solid;
+                border-color: black;
+                border-width: 3px;
+                border-collapse: collapse;
+            }
+            .box-one{
+                border-style: solid;
+                border-color: black;
+                border-width: 3px;
+                width: 300PX;
+                height: 240px;
+                background-color: aqua;
+             }
+             .box-two{
+                border-style: solid;
+                border-color: black;
+                border-width: 3px;
+                height: 240px;
+                width: 300px;
+                background-color: bisque;
+            }
+            
+            .box-four{
+                border-style: solid;
+                border-color: black;
+                border-width: 3px;
+                width: 300px;
+                background-color: whitesmoke;
+                
+            }
+            .box-five{
+                border-style: solid;
+                border-color: black;
+                border-width: 3px;
+                width: 300px;
+                background-color: thistle;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <table class="table">
+            <!--row one-->
+            <tr>
+                <td class="box-one"  >1</td>
+                <td colspan="2" class="box-two">2</td>
+               
+            </tr>
+            <!--row two-->
+            <tr>
+                <td colspan="2" class="box-four">3</td>
+                <td class="box-five">4</td>
+               
+            </tr> 
+        </table>
+    </body>
+</html>
