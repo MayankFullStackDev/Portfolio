@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript PROJECT</title>
+    <style>
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-image {
+            height: 100px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+        }
+
+        .project-content {
+            padding: 1.5rem;
+        }
+
+        .project-content h3 {
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+
+        .project-content p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .project-link {
+            padding: 8px 16px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            transition: background 0.3s ease;
+        }
+
+        .project-link:hover {
+            background: #2980b9;
+        }
+
+        .main-page {
+            padding: 18px 26px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.9rem;
+            transition: background 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="projects-grid">
+        <div class="project-card">
+            <div class="project-image">📄</div>
+            <div class="project-content">
+                <h3> Ep tainer</h3>
+                <p>Using Javascript HTML5, Css  </p>
+                <div class="project-links">
+                    <a href="https://github.com/MayankFullStackDev/javascript/tree/main/java-script/SelfWork/Ep-Trainer_student" class="project-link">View Code</a>
+                    <a href="../ASEETS/javascript/ep-trainer/main-page.html" class="project-link">Live Demo</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image">📄</div>
+            <div class="project-content">
+                <h3> Check Feelings</h3>
+                <p>Using Javascript HTML5, Css </p>
+                <div class="project-links">
+                    <a href="https://github.com/MayankFullStackDev/javascript/blob/main/java-script/SelfWork/felling.html" class="project-link">View Code</a>
+                    <a href="./javascript/other/feelings.html" class="project-link">Live Demo</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image">📄</div>
+            <div class="project-content">
+                <h3>Coming Soon...</h3>
+                <p>Loading.....</p>
+                <div class="project-links">
+                    <a href="#" class="project-link">View Code</a>
+                    <a href="#" class="project-link">Live Demo</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image">📄</div>
+            <div class="project-content">
+                <h3>Coming Soon...</h3>
+                <p>Loading....</p>
+                <div class="project-links">
+                    <a href="#" class="project-link">View Code</a>
+                    <a href="#" class="project-link">Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+    <a href="../index.html"><button class="main-page">Back to main page</button></a>
+</body>
+
+</html>
